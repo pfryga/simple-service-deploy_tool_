@@ -1,0 +1,23 @@
+{
+    "name": "simple-service-deploy_tool_",
+    "version": "1.0.0",
+    "description": "",
+    "main": "deploy.js",
+    "scripts": {
+        "setup": "pm2 deploy ecosystem.json5 $ENV setup",
+        "deploy": "node deploy.js $ENV $REF"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/pfryga/simple-service-deploy_tool_.git"
+    },
+    "author": "piotr.fryga@allegro.pl",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/pfryga/simple-service-deploy_tool_/issues"
+    },
+    "homepage": "https://github.com/pfryga/simple-service-deploy_tool_#readme",
+    "dependencies": {
+        "pm2": "^0.14.7"
+    }
+}
